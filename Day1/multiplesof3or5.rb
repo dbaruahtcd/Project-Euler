@@ -8,19 +8,19 @@ Find the sum of all the multiples of 3 or 5 below the provided parameter value n
 require "test/unit/assertions"
 include Test::Unit::Assertions
 
-  def multiplesOf3or5(number)
-    multiples = []
-    (1...number).each do |num|
-      if (num % 3) == 0
-        multiples << num
-      elsif (num % 5) == 0
-        multiples << num
-      else
-        next
-      end
+def multiplesOf3or5(number)
+  multiples = []
+  (1...number).each do |num|
+    if (num % 3) == 0
+      multiples << num
+    elsif (num % 5) == 0
+      multiples << num
+    else
+      next
     end
-    return multiples.inject(0, :+)
   end
+  return multiples.inject(0, :+)
+end
 
 assert_equal(multiplesOf3or5(10), 23)
 assert_not_equal(multiplesOf3or5(11), 23)
