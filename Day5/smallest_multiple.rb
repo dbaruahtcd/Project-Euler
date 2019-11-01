@@ -1,7 +1,9 @@
 =begin
+2520 is the smallest number that can be divided by each of the numbers from 1 to 10 without any remainder.
+
+What is the smallest positive number that is evenly divisible by all of the numbers from 1 to n?
 =end
-require 'test/unit/assertions'
-include Test::Unit::Assertions
+require '../spec_helper'
 
 def smallest_multiple(num)
   # in order to solve this we would need to first find the gcd and then the lcm of the

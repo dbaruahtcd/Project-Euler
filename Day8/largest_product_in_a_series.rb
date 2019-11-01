@@ -1,9 +1,8 @@
 =begin
+The four adjacent digits in the 1000-digit number that have the greatest
+product in the string provided are 9 × 9 × 8 × 9 = 5832.
 =end
-require 'test/unit/assertions'
-include Test::Unit::Assertions
-# require 'byebug'
-
+require '../spec_helper'
 
 # We use the sliding window technique to solve this problem
 # This algorithm’s big O is O(n*m) where n is the length of

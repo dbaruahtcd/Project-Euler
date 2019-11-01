@@ -7,9 +7,7 @@ By considering the terms in the Fibonacci sequence that do not exceed the nth te
 find the sum of the even-valued terms.
 =end
 
-require 'test/unit/assertions'
-include Test::Unit::Assertions
-
+require '../spec_helper'
 
 def fibonacci_even_sum(num)
   sum = 2 # including 2 by default

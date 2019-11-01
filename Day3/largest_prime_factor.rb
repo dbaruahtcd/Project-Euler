@@ -3,8 +3,7 @@ The prime factors of 13195 are 5, 7, 13 and 29.
 What is the largest prime factor of the given number?
 =end
 
-require 'test/unit/assertions'
-include Test::Unit::Assertions
+require '../spec_helper'
 
 # Starting at 2 continuously divide until it's no longer divisible. Then
 # increment the divisor and continue until the number is 1

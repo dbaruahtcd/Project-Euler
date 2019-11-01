@@ -4,9 +4,7 @@ If we list all the natural numbers below 10 that are multiples of 3 or 5, we get
 Find the sum of all the multiples of 3 or 5 below the provided parameter value number.
 =end
 
-
-require 'test/unit/assertions'
-include Test::Unit::Assertions
+require '../spec_helper'
 
 def multiplesOf3or5(number)
   sum = 0

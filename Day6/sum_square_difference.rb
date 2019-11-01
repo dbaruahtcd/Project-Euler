@@ -9,8 +9,7 @@ Hence the difference between the sum of the squares of the first ten natural num
 Find the difference between the sum of the squares of the first n natural numbers and the square of the sum.
 =end
 
-require 'test/unit/assertions'
-include Test::Unit::Assertions
+require '../spec_helper'
 
 def sum_square_difference(n)
   square_of_sum = (1..n).to_a.reduce(0, :+) ** 2
